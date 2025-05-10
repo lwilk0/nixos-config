@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -111,12 +111,11 @@
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
-  home.file = {
-    ".config/../" = {
-      source = ./dotfiles/home/config;
-      recursive = true;
-    };
-  };
+  #home.file = {
+    #".config/" = {
+    # source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/home/config;
+    #};
+    #};
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
