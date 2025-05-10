@@ -1,9 +1,8 @@
 #! /run/current-system/sw/bin/zsh
 
-cd ~/.dotfiles &&
+git add * && 
 sudo nix flake update &&
 home-manager switch --flake . -b backup &&
 sudo nixos-rebuild switch --flake . --impure &&
-git add * &&
 git commit -m "Update to config" &&
 git push origin master &&
