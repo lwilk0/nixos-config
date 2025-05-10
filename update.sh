@@ -2,7 +2,7 @@
 
 cd ~/.dotfiles &&
 sudo nix flake update &&
-home-manager switch --flake . &&
+home-manager switch --flake . -b backup &&
 sudo nixos-rebuild switch --flake . --impure &&
 git add * &&
 git commit -m "Update to config" &&
