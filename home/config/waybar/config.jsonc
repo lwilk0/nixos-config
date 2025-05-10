@@ -1,0 +1,151 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "group/expand",
+        "pulseaudio",
+        "battery",
+        "clock",
+    ],
+
+    "custom/expand": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/endpoint":{
+        "format": "|",
+        "tooltip": false
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "icon": true,
+        "max-length": 60
+    },
+    "group/expand": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 600,
+            "transition-to-left": true,
+            "click-to-reveal": true
+        },
+        "modules": ["custom/expand", "cpu","memory","temperature","backlight","network","custom/endpoint"]
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": "",
+            "empty": ""
+        },
+        "persistent-workspaces": {
+            "*": [1,2,3,4,5]
+        }
+    },
+
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": " {:%H:%M 󰃭 %d/%m/%y}",
+        "interval": 1
+    },
+    "cpu": {
+        "format": " {}%",
+        "tooltip": true
+    },
+    "memory": {
+        "format": " {}%"
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["", "", "", "",""]
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "scroll-step": 5,
+        "format": "{icon} {percent}%",
+        "tooltip": false,
+        "tooltip-format": "{percent}%",
+        "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"]
+    },
+    "battery": {
+        "states": {
+            //"good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂁", "󰁹"],
+        "full-at": 98
+    },
+    "power-profiles-daemon": {
+      "format": "{icon} {profile}",
+      "tooltip": "false",
+      "format-icons": {
+        "default": "󱐋",
+        "performance": "󱐋",
+        "balanced": "󰗑",
+        "power-saver": "󰌪"
+      }
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "󰖩 {signalStrength}%",
+        "format-ethernet": "{ipaddr}/{cidr} 󰈁",
+        "tooltip": "false",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "tooltip": "false",
+        "format": "{icon}{volume}%",
+        "format-bluetooth": "󰂯 {icon}{volume}%",
+        "format-bluetooth-muted": "󰝟 󰂯 {icon}",
+        "format-muted": "󰝟 {format_source}",
+        "format-source": "󰍬 {volume}%",
+        "format-source-muted": "󰍭",
+        "format-icons": {
+            "headphone": "󰋋 ",
+            "hands-free": "󱡏",
+            "headset": "󰋋",
+            "phone": "󰏲",
+            "portable": "󰏲",
+            "car": "󰄋",
+            "default": ["󰕿", "", ""]
+        },
+        "on-click": "blueman-manager"
+    },
+    "custom/openvpn": {
+        "exec": "~/.config/waybar/scripts/openvpn-rs",
+        "format": "{}",
+        "interval": 60,
+        "on-click": "sudo openvpn ~/Documents/OVPN/Wilko.ovpn",
+        "on-click-right": "sudo pkill openvpn"
+    },
+
+}
+

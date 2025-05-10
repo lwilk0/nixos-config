@@ -1,0 +1,92 @@
+
+{
+  "logo": "~/Photos/NixOS.png",
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "modules": [
+    {
+      "format": "\n",
+      "type": "custom"
+    },
+    {
+      "color": "blue",
+      "format": "┌──────────── OS Information ────────────┐",
+      "type": "custom"
+    },
+    {
+      "color": {
+        "host": "green",
+        "user": "green"
+      },
+      "key": " ╭─ ",
+      "keyColor": "green",
+      "type": "title"
+    },
+    {
+      "key": " ├─ ",
+      "keyColor": "green",
+      "type": "os"
+    },
+    {
+      "key": " ├─ ",
+      "keyColor": "green",
+      "type": "kernel"
+    },
+    {
+      "key": " ├─ ",
+      "keyColor": "green",
+      "type": "packages"
+    },
+    {
+      "key": " ╰─  ",
+      "keyColor": "green",
+      "type": "shell"
+    },
+    {
+      "color": "blue",
+      "format": "├───────── Hardware Information ─────────┤",
+      "type": "custom"
+    },
+    {
+      "key":  " ╭─ 󰍛 ",
+      "keyColor": "blue",
+      "type": "cpu"
+    },
+    {
+      "key": " ├─ 󰍛 ",
+      "keyColor": "blue",
+      "type": "gpu"
+    },
+    {
+      "key": " ├─   ",
+      "keyColor": "blue",
+      "type": "memory"
+    },
+    {
+      "key": " ╰─ 󱛟 ",
+      "keyColor": "blue",
+      "type": "disk"
+    },
+    {
+      "color": "blue",
+      "format": "├───────── Software Information ─────────┤",
+      "type": "custom"
+    },
+    {
+      "key": " ╭─  ",
+      "keyColor": "yellow",
+      "type": "wm"
+    },
+    {
+      "key": " ╰─   ",
+      "keyColor": "yellow",
+      "type": "terminal"
+    },
+    {
+      "format": "└────────────────────────────────────────┘",
+      "keyColor": "blue",
+      "type": "custom"
+    },
+    "break"
+  ]
+}
+
