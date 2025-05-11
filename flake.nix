@@ -3,14 +3,14 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.11";
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, home-manager, nixpkgs, chaotic, ...}:
+  outputs = { self, home-manager, nixpkgs, ...}:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -22,9 +22,6 @@
         inherit system;
         modules = [
           ./configuration.nix
-          chaotic.nixosModules.nyx-cache
-          chaotic.nixosModules.nyx-overlay
-          chaotic.nixosModules.nyx-registry
         ];
       };
     };

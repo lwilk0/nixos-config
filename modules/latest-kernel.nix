@@ -2,5 +2,5 @@
 
 {
   # Latest kernel
-  boot.kernelPackages = pkgs.linuxPackages_cachyos-hardened;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 }
