@@ -6,7 +6,6 @@ let
   unstable = import <unstable> {};
 in
 {
-
   environment.systemPackages = with pkgs; [
     unixbench # TEMP
     # Hyprland

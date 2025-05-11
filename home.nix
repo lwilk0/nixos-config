@@ -20,11 +20,6 @@
     userEmail = "wilkinsonluke@proton.me";
   };
 
-  
-
-
-
-
 
   # theme
   home.packages = with pkgs; [
