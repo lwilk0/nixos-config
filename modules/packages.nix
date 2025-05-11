@@ -8,7 +8,7 @@ in
 {
 
   environment.systemPackages = with pkgs; [
-    unixbench
+    unixbench # TEMP
     # Hyprland
     hyprland # Window manager
     xdg-desktop-portal-gtk # Desktop integration portals for sandboxed apps
@@ -52,10 +52,6 @@ in
     rustup # Rust toolchain installer
     cargo # Rust utilities
 
-    # GTK3
-    gtk3 # GUI toolkit
-    nwg-look # GTK3 settings
-
     # Theming
     papirus-icon-theme # Icons
     phinger-cursors # Cursors
@@ -73,8 +69,8 @@ in
     htop # Interactive process viewer
     qalculate-gtk # Calculator
     wget # Retrieve files
-    libsForQt5.qt5ct # GT5 configuration tool
     gcc # GNU compiler collection
+    gtk3 # GUI toolkit
   ];
 
   # Thunar plugins
