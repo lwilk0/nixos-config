@@ -8,6 +8,7 @@ in
 {
 
   environment.systemPackages = with pkgs; [
+    unixbench
     # Hyprland
     hyprland # Window manager
     xdg-desktop-portal-gtk # Desktop integration portals for sandboxed apps
