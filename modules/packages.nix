@@ -34,6 +34,7 @@ in
     # Browsers
     ungoogled-chromium
     librewolf-bin
+    brave
 
     # Archive
     unzip # Zip extraction
