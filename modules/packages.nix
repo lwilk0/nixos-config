@@ -32,8 +32,6 @@ in
     blueman # Bluetooth manager
 
     # Browsers
-    ungoogled-chromium
-    librewolf-bin
     brave
 
     # Archive
