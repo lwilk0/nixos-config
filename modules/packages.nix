@@ -69,7 +69,6 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     gtk3 # GUI toolkit
-    kdePackages.okular # PDF viewer
   ];
 
   # Thunar plugins
