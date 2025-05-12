@@ -21,7 +21,7 @@
       nixos = lib.nixosSystem {
         inherit system;
         modules = [
-          ./configuration.nix
+          ./hosts/default/configuration.nix
         ];
       };
     };
@@ -29,7 +29,9 @@
     homeConfigurations = {
       wilko = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home.nix ];
+        modules = [
+            ./hosts/default/home.nix
+        ];
       };
     };
   };
