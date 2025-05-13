@@ -38,7 +38,6 @@ in
     unzip # Zip extraction
 
     # Media
-    unstable.freetube # YouTube app
     jellyfin-media-player # Jellyfin desktop client
 
     # Thunar
