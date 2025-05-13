@@ -40,6 +40,7 @@ in
     # Media
     jellyfin-media-player # Jellyfin desktop client
 
+
     # Thunar
     xfce.thunar # File manager
     mtpfs # FUSE Filesystem providing access to MTP devices
