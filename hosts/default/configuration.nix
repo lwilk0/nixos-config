@@ -12,7 +12,8 @@
     <catppuccin/modules/nixos>
   
     ../../modules/hardware/rtl8821ce.nix
-    
+    ../../modules/hardware/cpu-performance.nix
+
     ../../modules/styles/catppuccin.nix
 
     ../../modules/latest-kernel.nix
