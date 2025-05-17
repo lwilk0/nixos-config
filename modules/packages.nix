@@ -67,8 +67,6 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     gtk3 # GUI toolkit
-    prismlauncher # Minecraft
-    jdk23 # Java
   ];
 
   # Thunar plugins
