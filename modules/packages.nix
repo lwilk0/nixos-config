@@ -67,7 +67,7 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     gtk3 # GUI toolkit
-    jdk23 # Java
+    jdk21_headless # Java
   ];
 
   # Thunar plugins
