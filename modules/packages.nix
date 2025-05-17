@@ -7,7 +7,6 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
-    unixbench # TEMP
     # Hyprland
     hyprland # Window manager
     xdg-desktop-portal-gtk # Desktop integration portals for sandboxed apps
@@ -40,7 +39,6 @@ in
     # Media
     jellyfin-media-player # Jellyfin desktop client
 
-
     # Thunar
     xfce.thunar # File manager
     mtpfs # FUSE Filesystem providing access to MTP devices
@@ -69,6 +67,7 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     gtk3 # GUI toolkit
+    jdk23 # Java
   ];
 
   # Thunar plugins
