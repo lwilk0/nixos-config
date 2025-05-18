@@ -32,6 +32,7 @@
     ../../modules/systemd-bootloader.nix
     ../../modules/hardware-acceleration.nix
     ../../modules/experimental-features.nix
+    ../../modules/gnupg.nix
   ];
 
   # Bootloader.

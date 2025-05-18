@@ -68,7 +68,7 @@ in
     gcc # GNU compiler collection
     gtk3 # GUI toolkit
     gnupg # Encryption
-    pinentry # For gnupg
+    pinentry-curses # For gnupg
   ];
 
   # Thunar plugins
