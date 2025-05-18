@@ -67,6 +67,7 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     gtk3 # GUI toolkit
+    gnupg # Encryption
   ];
 
   # Thunar plugins
