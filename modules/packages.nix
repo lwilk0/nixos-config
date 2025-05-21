@@ -47,7 +47,7 @@ in
     # Rust
     rustup # Rust toolchain installer
     cargo # Rust utilities
-
+    rust-analyzer # Modular compiler frontend
     # Theming
     papirus-icon-theme # Icons
     phinger-cursors # Cursors
