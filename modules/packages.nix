@@ -47,7 +47,7 @@ in
     # Rust
     rustup # Rust toolchain installer
     cargo # Rust utilities
-    rust-analyzer # Modular compiler frontend
+
     # Theming
     papirus-icon-theme # Icons
     phinger-cursors # Cursors
@@ -56,7 +56,7 @@ in
     dunst # Notifications
     git # Version control
     kitty # Terminal emulator
-    unstable.neovim # editor
+    vscodium # Editor
     rofi-wayland # launcher
     swaybg # Wallpaper
     wlsunset # Backlight temperature
@@ -68,7 +68,6 @@ in
     gcc # GNU compiler collection
     gnupg # Encryption
     pinentry-curses # For gnupg
-    gnumake
   ];
 
   # Thunar plugins
