@@ -112,7 +112,7 @@
     ".config/fastfetch/config.jsonc".source = ../../home/config/fastfetch/config.jsonc;
     ".config/hypr/hyprland.conf".source = ../../home/config/hypr/hyprland.conf;
     ".config/kitty/kitty.conf".source = ../../home/config/kitty/kitty.conf;
-    ".config/nvim".source = ../../home/config/nvim;
+    # ".config/nvim".source = ../../home/config/nvim;
     ".config/rofi".source = ../../home/config/rofi;
     ".config/Thunar".source = ../../home/config/Thunar;
     ".config/waybar".source = ../../home/config/waybar;

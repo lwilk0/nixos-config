@@ -66,9 +66,9 @@ in
     qalculate-gtk # Calculator
     wget # Retrieve files
     gcc # GNU compiler collection
-    gtk3 # GUI toolkit
     gnupg # Encryption
     pinentry-curses # For gnupg
+    gnumake
   ];
 
   # Thunar plugins
