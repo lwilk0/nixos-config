@@ -56,7 +56,7 @@ in
     dunst # Notifications
     git # Version control
     kitty # Terminal emulator
-    neovim # editor
+    unstable.neovim # editor
     rofi-wayland # launcher
     swaybg # Wallpaper
     wlsunset # Backlight temperature
