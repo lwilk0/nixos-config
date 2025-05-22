@@ -47,7 +47,6 @@ in
     # Rust
     rustup # Rust toolchain installer
     cargo # Rust utilities
-    rustfmt # Rust formating
 
     # Theming
     papirus-icon-theme # Icons
