@@ -69,6 +69,7 @@ in
     gnupg # Encryption
     pinentry-curses # For gnupg
     nettle # rust-analyzer told me to install
+    clang
   ];
 
   # Thunar plugins
