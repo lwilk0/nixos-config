@@ -68,6 +68,7 @@ in
     gcc # GNU compiler collection
     gnupg # Encryption
     gpgme
+    libgpg-error
     pinentry-curses # For gnupg
   ];
 
