@@ -67,8 +67,8 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     gnupg # Encryption
-    gpgme
     libgpg-error
+    gpgme
     pinentry-curses # For gnupg
   ];
 
