@@ -68,7 +68,7 @@ in
     gcc # GNU compiler collection
     gnupg # Encryption
     pinentry-curses # For gnupg
-    wev
+    nettle # rust-analyzer told me to install
   ];
 
   # Thunar plugins
