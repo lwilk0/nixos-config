@@ -68,6 +68,7 @@ in
     gcc # GNU compiler collection
     gnupg # Encryption
     pinentry-curses # For gnupg
+    wev
   ];
 
   # Thunar plugins
