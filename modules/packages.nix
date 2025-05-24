@@ -67,9 +67,8 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     gnupg # Encryption
+    gpgme
     pinentry-curses # For gnupg
-    nettle # rust-analyzer told me to install
-    clang
   ];
 
   # Thunar plugins
