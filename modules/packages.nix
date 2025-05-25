@@ -67,8 +67,10 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     
-    unstable.libgpg-error
-    unstable.gpgme
+    libgpg-error
+    gpgme
+    libassuan
+    gnupg
     
   ];
 
