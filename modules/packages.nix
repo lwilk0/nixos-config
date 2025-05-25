@@ -67,7 +67,7 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     
-    unstable.libgpg-error
+    unstable.libgpg-error-gen-posix-lock-obj
     unstable.gpgme
     
   ];
