@@ -67,11 +67,8 @@ in
     wget # Retrieve files
     gcc # GNU compiler collection
     
-    libgpg-error
+    crate2nix
     gpgme
-    libassuan
-    gnupg
-    
   ];
 
   # Thunar plugins
