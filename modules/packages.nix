@@ -66,10 +66,10 @@ in
     qalculate-gtk # Calculator
     wget # Retrieve files
     gcc # GNU compiler collection
-    gnupg # Encryption
-    libgpg-error
-    gpgme
-    pinentry-curses # For gnupg
+    
+    unstable.libgpg-error
+    unstable.gpgme
+    
   ];
 
   # Thunar plugins
